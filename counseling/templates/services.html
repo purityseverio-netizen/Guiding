@@ -1,0 +1,76 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{% static 'css/severio.css'%}">
+        <script src="{% static 'js/script.js' %}"></script>
+    <title>My services - Guiding and Counseling</title>
+</head>
+<body>
+<nav>
+<ul>
+    <li><a href="{% url 'home'%}">home</a></li>
+    <li><a href="{% url 'about'%}">about</a></li>
+    <li><a href="{% url 'contact'%}">contact</a></li>
+    <li><a href="{% url 'services'%}">services</a></li>
+
+
+
+
+</ul>
+    </nav>
+<img src="{% static 'images/image2.jpg' %}"
+     class="round-img spin-img">
+
+
+
+<header>
+    <h1>MY COUNSELING SERVICES</h1>
+    <p>One on one sessions to help clients work through personal issues such as stress,anxiety,low esteem,trauma or life adjustments.</p>
+        <h2>Career and Academic Guidance</h2>
+        <P>Support with career choices,subject selection,study skills,exam preparations and goal setting for students. </P>
+<h2>Group Counseling</h2>
+        <p>Group sessions for shared topics such as grief,stress management,peer support,adduction recovery or youth mentorship.</p>
+        <h2>Family and Couples counseling</h2>
+<p>Helping families and couples improve communication,resolve conflicts and build stronger relationships.</p>
+    <h2>Psychosocial Support</h2>
+    <p>Emotional and psychological support for individuals facing challenges such as crisis,trauma or difficult life events.</p>
+            <h2>Mental Health Education and Workshops</h2>
+            <p>Training and workshops for schools,youth groups,workplaces and communities on mental health awareness,communication skills and personal development.</p>
+</header>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Guiding and counseling</h3>
+            <p>Supporting emotional wellness,personal growth and mental clarity.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Information</h4>
+            <p>0746642896</p>
+            <p>purityseverio@gmail.com</p>
+            <p> Nairobi,Kenya</p>
+            <div class="footer-section">
+                <h4>Connect with me</h4>
+                <p>
+                            <a href="https://wa.me/254746642896"
+            target="_blank" class="social-link">Whatsapp Chart</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        @ 2025 Guiding and Counseling.All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+
+{% load  static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{% static 'css/severio.css'%}">
+    <script src="{% static 'js/script.js' %}"></script>
+    <title>Guiding and Counseling Services</title>
+</head>
+<body>
+<nav>
+<ul>
+    <li><a href="{% url 'home'%}">home</a></li>
+    <li><a href="{% url 'about'%}">about</a></li>
+    <li><a href="{% url 'contact'%}">contact</a></li>
+    <li><a href="{% url 'services'%}">services</a></li>
+
+
+
+
+</ul>
+    </nav>
+<img src="{% static 'images/image1.jpg' %}"
+     class="round-img spin-img">
+
+
+
+<header>
+    <h1>Welcome to Guiding and Counseling</h1>
+    <p>Helping individuals grow emotionally,mentally and socially.</p>
+</header>
+<section>
+    <h2>About my Services</h2>
+    <p>I offer professional guiding and counseling services aimed at supporting individuals facing emotional,psychological environment where clients can express themselves freely</p>.
+    <h2>Why Counseling Matters</h2>
+    <p>Counseling helps individuals understand themselves better,manage stress,build stronger relationships and make better life decisions.It provides tools and strategies coping with anxiety,depression,conflict,career issues and personal struggles. </p>
+    <h2>What You Can Expect</h2>
+    <P>You will receive compassionate,confidential and non-judgemental support from trained counsellor.I focus on helping you gain self-awareness,improve your well-being and move toward positive growth in all areas of life.</P>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Guiding and counseling</h3>
+            <p>Supporting emotional wellness,personal growth and mental clarity.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Information</h4>
+            <p>0746642896</p>
+            <p>purityseverio@gmail.com</p>
+            <p> Nairobi,Kenya</p>
+            <div class="footer-section">
+                <h4>Connect with me</h4>
+                <p>
+                            <a href="https://wa.me/254746642896"
+            target="_blank" class="social-link">Whatsapp Chart</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        @ 2025 Guiding and Counseling.All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>

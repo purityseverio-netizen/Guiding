@@ -1,0 +1,104 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{% static 'css/severio.css'%}">
+        <script src="{% static 'js/script.js' %}"></script>
+    <title>Contact Me - Guiding and Counseling</title>
+</head>
+<body>
+<nav>
+<ul>
+    <li><a href="{% url 'home'%}">home</a></li>
+    <li><a href="{% url 'about'%}">about</a></li>
+    <li><a href="{% url 'contact'%}">contact</a></li>
+    <li><a href="{% url 'services'%}">services</a></li>
+
+
+
+
+</ul>
+    </nav>
+<img src="{% static 'images/image2.jpg' %}"
+     class="round-img spin-img">
+<header>
+<h1>Contact Me</h1>
+<p>I am here to listen,support and help you</p>
+</header>
+<section>
+    <h2> Get in Touch</h2>
+    <p>If you have any questions,concerns or would like to schedule a counseling session,feel free to reach out to me.I am available and ready to assist you.</p>
+        <form action="#" method="post">
+            {% csrf_token %}
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email" style="margin-top: 20px;>Email Adress</label>
+            <input type="email" id="email" name "email"
+            placeholder="Enter your email" required>
+
+            <label for="message" style="margin-top: 20px;">Your message:</label>
+            <textarea id="message" name="message"rows="5" placeholder="Write your message here..." required></textarea>
+
+ <button type="submit">Send message</button>
+        </form>
+    </div>
+    <h2>Contact details</h2>
+    <p>
+        <strong>Phone:</strong> 0746642896 <br>
+        <strong>Email:</strong> purityseverio@gmail.com <br>
+    </p>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Guiding and counseling</h3>
+            <p>Supporting emotional wellness,personal growth and mental clarity.</p>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+             <label>Email</label>
+            <label>
+                <input type="text" name="email" required>
+            </label>
+
+            <label>Message</label>
+            <label>
+                <textarea name="message" required></textarea>
+            </label>
+            <bottom type="submit">send</bottom>
+        </form>
+        <div class="footer-section">
+            <h4>Contact Information</h4>
+            <p>0746642896</p>
+            <p>purityseverio@gmail.com</p>
+            <p> Nairobi,Kenya</p>
+            <div class="footer-section">
+                <h4>Connect with me</h4>
+                <p>
+                            <a href="https://wa.me/254746642896"
+            target="_blank" class="social-link">Whatsapp Chart</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        @ 2025 Guiding and Counseling.All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
