@@ -9,7 +9,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="{% static 'css/severio.css'%}">
-    <script src="{% static 'js/script.js' %}"></script>
     <title>Guiding and Counseling Services</title>
 </head>
 <body>
@@ -25,13 +24,27 @@
 
 </ul>
     </nav>
-<img src="{% static 'images/image1.jpg' %}"
-     class="round-img spin-img">
-
-
-
 <header>
-    <h1>Welcome to Guiding and Counseling</h1>
+    <h1 id="title">Welcome to Guiding and Counseling</h1>
+    <br><br>
+
+    <img id="image1" src="{% static 'images/image1.jpg' %}" width="150" onclick="StartSpin('image1')"
+     class="round-img spin-img">
+    <hr>
+
+    <div class="dropdown" onclick="toggleDropdown('menu')">
+        Services
+    </div>
+    <div id="menu" class="dropdown-content">
+        <p>Group counseling</p>
+        <p>Family and Couples Counseling</p>
+        <p>Psychosocial support</p>
+        <p>Mental health Education and workshops</p>
+    </div>
+
+        <script src="{% static 'js/script.js' %}"></script>
+
+
     <p>Helping individuals grow emotionally,mentally and socially.</p>
 </header>
 <section>
