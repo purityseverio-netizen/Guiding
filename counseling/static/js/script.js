@@ -1,3 +1,4 @@
+console.log("SCRIPT LOADED");
 // Shake any element by ID
 function  shake(id) {
     const element=document.getElementById(id);

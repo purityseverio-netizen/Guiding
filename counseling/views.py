@@ -10,13 +10,10 @@ def contact(request):
         name = request.POST.get("name")
         email = request.POST.get("email")
         message = request.POST.get("message")
-        Contact.objects.create(
-            name=name,
-            email=email,
-            message=message
-        )
-        return redirect('contact') # reload page after
-        # sending
+        query = Contact(name=name, email=email, message=message)
+        query.save()
+        return redirect('/')
+
     return render(request, 'contact.html')
 def services(request):
     return render(request, 'services.html')
